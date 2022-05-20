@@ -1,0 +1,30 @@
+/* Class definition for the base pane */
+
+.anchor_pane {
+    -fx-background-color: #FFFFFF;
+}
+.grid_pane {
+    -fx-background-color: #FFFFFF;
+    -fx-background-fill: black, white ;
+    -fx-background-insets: 0, 1 ;
+}
+
+.boardButtonStart{
+    -fx-background-color: rgba(0,0,0,0.08);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-text-fill: #070707;
+    -fx-opacity: 1.0 ;
+    -fx-font-size: 20;
+}
+.boardButtonPlayer {
+    -fx-background-color: rgba(0,0,0,0.08);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-text-fill: blue;
+    -fx-opacity: 1.0 ;
+}
+
+.button:hover {
+    -fx-background-color: #ecf0f1;
+}

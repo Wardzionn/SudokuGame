@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane styleClass="anchor_pane" stylesheets="@Game.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane fx:id="tableBoard" gridLinesVisible="true" layoutX="0.5" layoutY="0.5" onMouseEntered="#keyPress" prefHeight="450.0" prefWidth="450.0" styleClass="grid_pane" stylesheets="@Game.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="20.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="30.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+         </rowConstraints>
+      </GridPane>
+      <Button fx:id="button1" layoutX="505.0" layoutY="142.5" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1" AnchorPane.rightAnchor="130.0" />
+      <Button fx:id="button2" layoutX="564.0" layoutY="142.5" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2" AnchorPane.rightAnchor="70.0" />
+      <Button fx:id="button3" layoutX="623.0" layoutY="142.5" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3" AnchorPane.rightAnchor="10.0" />
+      <Button fx:id="button4" layoutX="505.0" layoutY="201.5" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4" AnchorPane.rightAnchor="130.0" />
+      <Button fx:id="button5" layoutX="564.0" layoutY="201.5" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5" AnchorPane.rightAnchor="70.0" />
+      <Button fx:id="button6" layoutX="623.0" layoutY="201.5" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6" AnchorPane.rightAnchor="10.0" />
+      <Button fx:id="button7" layoutX="505.0" layoutY="261.5" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="7" AnchorPane.rightAnchor="130.0" />
+      <Button fx:id="button8" layoutX="564.0" layoutY="261.5" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8" AnchorPane.rightAnchor="70.0" />
+      <Button fx:id="button9" layoutX="623.0" layoutY="261.5" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9" AnchorPane.rightAnchor="10.0" />
+      <Button fx:id="returnButton" layoutX="612.0" layoutY="435.0" mnemonicParsing="false" onAction="#returnButtonPress" prefHeight="38.0" prefWidth="67.0" text="%RETURN" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Button fx:id="saveButton" layoutX="568.0" layoutY="338.0" mnemonicParsing="false" onAction="#saveButtonPress" prefHeight="50.0" prefWidth="104.0" text="%SAVE" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="338.0" />
+      <Button fx:id="checkBoardButton" layoutX="521.0" layoutY="20.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="149.0" text="%CHECK" AnchorPane.rightAnchor="19.799999999999983" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="DejaVu Sans ExtraLight" size="12.0" />
+         </font></Button>
+      <Button fx:id="resetButton" layoutX="511.0" layoutY="351.0" mnemonicParsing="false" onAction="#resetBoardButtonPress" text="reset" AnchorPane.rightAnchor="132.19999999999993" AnchorPane.topAnchor="351.0">
+         <font>
+            <Font name="DejaVu Sans ExtraLight" size="12.0" />
+         </font></Button>
+      <Button fx:id="delButton" layoutX="544.0" layoutY="98.0" mnemonicParsing="false" onAction="#deleteButtonPress" prefHeight="38.0" prefWidth="104.0" text="%DEL" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="95.0" />
+   </children>
+</AnchorPane>

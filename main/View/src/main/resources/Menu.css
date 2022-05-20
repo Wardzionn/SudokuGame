@@ -1,0 +1,8 @@
+.base_pane{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+}
+
+.button:hover {
+    -fx-background-color: #ecf0f1;
+}

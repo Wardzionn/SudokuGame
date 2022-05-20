@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ChoiceBox id="choiceBox" fx:id="choiceBox" layoutX="506.0" layoutY="331.0" prefHeight="39.0" prefWidth="138.0" />
+      <Button fx:id="loadGameButton" layoutX="148.0" layoutY="225.0" mnemonicParsing="false" onAction="#loadGameButtonPress" prefHeight="50.0" prefWidth="120.0" text="%LOAD">
+         <font>
+            <Font name="DejaVu Sans ExtraLight" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="startButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="2.0" layoutX="446.0" layoutY="225.0" mnemonicParsing="false" onAction="#startButtonPress" prefHeight="50.0" prefWidth="120.0" text="%START" textAlignment="CENTER">
+         <font>
+            <Font name="DejaVu Sans ExtraLight" size="15.0" />
+         </font>
+      </Button>
+      <Text fx:id="diffText" layoutX="70.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_pane" text="%CH_DIFF" wrappingWidth="369.13671875">
+         <font>
+            <Font name="DejaVu Sans ExtraLight" size="39.0" />
+         </font>
+      </Text>
+      <Text fx:id="noDiffAlert" layoutX="347.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%NO_DIFF_CH">
+         <font>
+            <Font name="DejaVu Sans ExtraLight" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="titleText" layoutX="148.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="base_pane" text="%TITLE" textAlignment="CENTER" wrappingWidth="397.2421875">
+         <font>
+            <Font name="DejaVu Sans ExtraLight" size="96.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutY="395.0" prefHeight="86.0" prefWidth="693.0">
+         <children>
+            <Button fx:id="langPL" mnemonicParsing="false" prefHeight="25.0" prefWidth="48.0" text="%langPL" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="100.0" />
+            <Button fx:id="closeButton" mnemonicParsing="false" onAction="#closeButtonPress" text="%EXIT" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="25.0">
+               <font>
+                  <Font name="DejaVu Sans ExtraLight" size="12.0" />
+               </font></Button>
+            <Button fx:id="langEN" mnemonicParsing="false" prefHeight="25.0" prefWidth="48.0" text="%langEN" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="25.0" />
+            <Label fx:id="authorsLabel" layoutX="95.0" layoutY="35.0" prefHeight="14.0" prefWidth="89.0" text="Authors" />
+            <Label fx:id="author1Label" layoutX="184.0" layoutY="35.0" prefHeight="14.0" prefWidth="89.0" text="Authors" />
+            <Label fx:id="author2Label" layoutX="184.0" layoutY="50.0" prefHeight="17.0" prefWidth="113.0" text="Authors" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="delButton" layoutX="47.0" layoutY="250.0" mnemonicParsing="false" onAction="#delButtonPress" text="%DEL" />
+   </children>
+</Pane>
